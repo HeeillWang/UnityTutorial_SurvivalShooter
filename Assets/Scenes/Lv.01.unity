@@ -303,32 +303,19 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 114000010213843236, guid: 77a5bdc08e726734ebcf03fd1a17d8c8,
+        type: 2}
+      propertyPath: healthSlider
+      value: 
+      objectReference: {fileID: 1258152637}
+    - target: {fileID: 114000010213843236, guid: 77a5bdc08e726734ebcf03fd1a17d8c8,
+        type: 2}
+      propertyPath: damageImage
+      value: 
+      objectReference: {fileID: 130453969}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 77a5bdc08e726734ebcf03fd1a17d8c8, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &685675132 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1000012347071602, guid: 77a5bdc08e726734ebcf03fd1a17d8c8,
-    type: 2}
-  m_PrefabInternal: {fileID: 685675131}
---- !u!114 &685675133
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 685675132}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 544f2064df03e95419b4a5147c506b08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startingHealth: 100
-  currentHealth: 0
-  healthSlider: {fileID: 1258152637}
-  damageImage: {fileID: 130453969}
-  deathClip: {fileID: 8300000, guid: d36a393bca4582043982db9089e1694f, type: 3}
-  flashSpeed: 5
-  flashColour: {r: 1, g: 0, b: 0, a: 0.1}
 --- !u!4 &685675138 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000013697539856, guid: 77a5bdc08e726734ebcf03fd1a17d8c8,
@@ -549,6 +536,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeBetweenAttacks: 0.5
   attackDamage: 10
+--- !u!114 &889567823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 889567814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9b9d14572410594cb85d40eedfb150c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 100
+  currentHealth: 0
+  sinkSpeed: 2.5
+  scoreValue: 10
+  deathClip: {fileID: 8300000, guid: 1d3bfb9269f136947bf8ac164cace1ff, type: 3}
 --- !u!1001 &977108322
 Prefab:
   m_ObjectHideFlags: 0
